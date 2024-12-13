@@ -39,7 +39,7 @@ export const Login = () => {
                     <p>Login to MindMaze</p>
                 </div>
                 <div>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className='form_login'>
                         <label>Username</label>
                         <input
                             type="text"

@@ -16,10 +16,10 @@ export const TodoForm = ({onAddTodo}) => {
     }
 
     return (
-            <section className="form">
+            <section className="form_todo">
                 <form onSubmit={handleFormSubmit}>
                     <div>
-                        <input type="text" className="todo-input" autoComplete="off" value={inputValue.content} onChange={(event) => handleInputChange(event.target.value)} />
+                        <input type="text" className="todo-input" placeholder="Add Task" autoComplete="off" value={inputValue.content} onChange={(event) => handleInputChange(event.target.value)} />
                     </div>
                     <button type="submit" className="todo-btn" >Add Task</button>
                 </form>

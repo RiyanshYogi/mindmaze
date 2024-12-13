@@ -27,7 +27,6 @@ export const Todo = () => {
 
     setLocalStorageTodoData(task)
 
-
     const handleDelete = (value) => {
         const updatedTask = task.filter((currTask) => currTask.content !== value);  
         setTask(updatedTask);
@@ -56,7 +55,7 @@ export const Todo = () => {
 
         <section className="todo-container">
             <header>
-                <h1><Link to={"/"} >MindMaze</Link> Tasking</h1>
+                <h1><Link to={"/home"} >MindMaze</Link> Tasking</h1>
             </header>
            
             <TodoDate />

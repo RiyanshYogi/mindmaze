@@ -1,6 +1,7 @@
 import "./Home.css"
 import { Link } from "react-router-dom"
 import { TodoDate } from "./projects/todo/TodoDate"
+import Logout from "./log/Logout"
 
 export const Home = () => {
     return (
@@ -20,22 +21,31 @@ export const Home = () => {
                     </Link>
                     <a href="#Home">Home</a>
                     <a href="#Courses">Courses</a>
-                    <a href="#features">features</a>
+                    <Logout />
+                    
                 </div>
 
             </nav>
-            <section className="about_class">
+            <section className="aboutapp_class">
 
                 <div>
-                    <h2>MindMaze</h2>
-                    <p>Hello there, Im about to tell you , this is most amazing website you can think of, its best thats what I can
-                        say all.</p>
-                    <p>Here we provide quizes for the different courses in computer science</p>
+                    <h1>MindMaze</h1>
+                    <p>The Mindmaze project is a single-page web application designed to enhance productivity and learning through an intuitive interface. It offers key features like task management via ToDo lists, interactive quizzes for knowledge assessment, and structured online courses. Built using modern technologies such as ReactJS for the frontend, Node.js for the backend, and MySQL and MongoDB for database management, the application ensures seamless performance and scalability. The platform prioritizes user experience, enabling easy navigation and quick responses. Mindmaze aims to empower users by combining education and organization, making it an ideal tool for individuals seeking efficiency and self-improvement.</p>
                 </div>
             </section>
+            
+            <section className="aboutapp_class">
 
+                <div>
+                    <h2>Take Quizes Below</h2>
+                    <hr />
+                    <p>Dive into the fascinating world of computer science with our exciting range of courses! From decoding algorithms to mastering web development, we’ve got something for every tech enthusiast. Want to crack the mysteries of databases or untangle the web of networks? Or maybe you're ready to conquer the AI frontier? Whatever your interest, we’ve packed our courses with knowledge bombs and interactive quizzes to keep you sharp and entertained. Don’t just learn—level up! Test your skills below, but beware, these quizzes are so addictive, even your CPU might ask for a break. Ready? Let’s turn that curiosity into code!</p>
+                    
+                </div>
+            </section>
+            
             <section id="Courses" className="course_class">
-
+                
                 <div>
                     <Link to="/computer">
                         <img src="/images/computer.png" alt="computer image" />
@@ -97,7 +107,7 @@ export const Home = () => {
                 </div>
 
             </section>
-            <section id="features" className="aboutapp_class">
+            <section className="aboutapp_class">
                 <div>
                     <h2>Key features</h2>
                     <hr />

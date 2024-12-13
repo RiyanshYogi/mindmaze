@@ -1,6 +1,6 @@
-import { Home } from "./Home";
-import { Todo } from "./projects/todo/Todo";
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { Route,BrowserRouter as Router, Routes } from 'react-router-dom';
+import PrivateRoute from './PrivateRoute';
+
 import Quiz from './projects/mindmaze/Quiz'
 import { database } from "./assets/database";
 import { computer } from "./assets/computer";
@@ -12,33 +12,94 @@ import { corejava } from "./assets/corejava";
 import { Login } from "./log/Login";
 import { Welcome } from "./Welcome";
 import { Signup } from "./log/Signup";
+import { Home } from "./Home";
+import { Todo } from "./projects/todo/Todo";
 
 
 const App = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Welcome />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/login" element={<Login />} />
 
-  return (
-    <Router>
-
-      <Routes>
-
-        <Route path="/" element={<Welcome />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/todo" element={<Todo />} />
-
-        
-        <Route path="/computer" element={<Quiz data={computer} />} />
-        <Route path="/database" element={<Quiz data={database} />} />
-        <Route path="/web" element={<Quiz data={web} />} />
-        <Route path="/dsa" element={<Quiz data={dsa} />} />
-        <Route path="/cn" element={<Quiz data={cn} />} />
-        <Route path="/os" element={<Quiz data={os} />} />
-        <Route path="/corejava" element={<Quiz data={corejava} />} />
-        
-      </Routes>
-    </Router>
-  )
-}
+                {/* Protected routes */}
+                <Route 
+                    path="/home" 
+                    element={
+                        <PrivateRoute>
+                            <Home />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/todo" 
+                    element={
+                        <PrivateRoute>
+                            <Todo />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/computer" 
+                    element={
+                        <PrivateRoute>
+                            <Quiz data={computer} />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/database" 
+                    element={
+                        <PrivateRoute>
+                            <Quiz data={database} />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/web" 
+                    element={
+                        <PrivateRoute>
+                            <Quiz data={web} />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/dsa" 
+                    element={
+                        <PrivateRoute>
+                            <Quiz data={dsa} />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/cn" 
+                    element={
+                        <PrivateRoute>
+                            <Quiz data={cn} />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/os" 
+                    element={
+                        <PrivateRoute>
+                            <Quiz data={os} />
+                        </PrivateRoute>
+                    } 
+                />
+                <Route 
+                    path="/corejava" 
+                    element={
+                        <PrivateRoute>
+                            <Quiz data={corejava} />
+                        </PrivateRoute>
+                    } 
+                />
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;

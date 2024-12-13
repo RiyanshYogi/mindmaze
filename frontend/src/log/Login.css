@@ -45,7 +45,7 @@
 
 
 form {
-    
+
     box-shadow: 10px 20px 20px 5px;
     width: 70vh;
     display: flex;
@@ -90,6 +90,7 @@ form label {
     margin: 10px;
     border-radius: 20px;
     font-size: x-large;
+    color: white;
 }
 
 .form_button > button:hover {
@@ -108,4 +109,6 @@ form input {
     width: 50%;
     font-style: italic;
     border-radius: 50px;
+    font-size: xx-large;
 }
+

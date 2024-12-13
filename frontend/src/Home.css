@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -14,17 +13,21 @@ body {
 }
 
 nav {
-  background-color: lightcoral;
+  background-color: rgba(240, 128, 128, 0.8); /* Light coral with transparency */
   display: flex;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   height: 50px;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
 
-  margin: 10px;
-  margin-bottom: 30px;
-  box-shadow: 10px 20px 20px;
+  margin: 0px; /* Remove margin to prevent gap when fixed */
+  position: fixed; /* Make navbar fixed */
+  top: 0; /* Fix to the top of the viewport */
+  width: 100%; /* Stretch the navbar across the viewport */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
 nav > div {
@@ -50,6 +53,7 @@ nav > div {
 .navigation_class > a:hover { color: lightslategray;}
 
 .navigation_class > a {
+  
   color: black;
   text-decoration: none;
   margin: 20px;
@@ -61,23 +65,7 @@ nav > div {
 
 /* Header section */
 
-.about_class {
-  /* border: 1px solid red; */
-  background-color: azure;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  box-shadow: 10px 20px 20px;
-  margin : 50px 20px;
-  
-}
 
-.about_class > div {
-  flex-basis: 600px;
-  padding: 10px;
-
-}
 
 .course_class {
 
@@ -156,15 +144,30 @@ nav > div {
 }
 
 .aboutapp_class > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   padding: 10px;
   /* border: 1px solid red; */
 }
 
-.aboutapp_class h2 {
-  margin: 10px;
+.aboutapp_class h1 {
+  color: black;
 }
+
+.aboutapp_class p {
+  font-size: large;
+  text-align: justify;
+  line-height: 1.8;
+}
+
 .aboutapp_class li {
+  font-size: large;
   margin: 5px;
+  text-align: justify;
+  line-height: 1.8;
 }
 
 .footer_class {

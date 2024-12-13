@@ -64,7 +64,7 @@ const Quiz = ({data}) => {
 
     return (
         <div className="container_quiz">
-            <Link to={"/"}>
+            <Link to={"/home"}>
             <h1>MindMaze</h1>
             </Link>
             <hr></hr>
