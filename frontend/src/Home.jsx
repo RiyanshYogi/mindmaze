@@ -6,9 +6,18 @@ import Logout from "./log/Logout"
 export const Home = () => {
     return (
         <>
-            <nav id="Home">
+            <nav>
                 <div className="title_class">
-                    <h1>MindMaze</h1>
+                    <h1>
+                        <span>M</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>d</span>
+                        <span>M</span>
+                        <span>a</span>
+                        <span>z</span>
+                        <span>e</span>
+                    </h1>
                 </div>
 
                 <div className="clock_class">
@@ -26,7 +35,7 @@ export const Home = () => {
                 </div>
 
             </nav>
-            <section className="aboutapp_class">
+            <section id="Home" className="aboutapp_class">
 
                 <div>
                     <h1>MindMaze</h1>

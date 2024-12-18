@@ -131,7 +131,8 @@
     /*word-wrap: break-word;
       */ /*flex-wrap: wrap;
       */
-    font-size: 20px;
+    font-size: xx-large;
+    font-weight: bold;
     color: #1c2833;
     border-radius: 30px;
     transition: background-color 200ms ease-in-out;

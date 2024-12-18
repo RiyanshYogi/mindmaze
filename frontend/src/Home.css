@@ -43,7 +43,37 @@ nav > div {
   font-family: Georgia, 'Times New Roman', Times, serif;
   flex-basis: 200px;
   margin-left: 20px;
+  font-size: x-large;
 }
+
+.title_class > h1 {
+  background : linear-gradient(90deg, red, orange, green, cyan, blue, violet, green, orange,  red);
+  -webkit-background-clip: text; /* Clips the gradient to the text only */
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show gradient */
+  animation : spectrum 20s linear infinite;
+  background-size: 300%;
+}
+
+.title_class span {
+  display: inline-block;
+  margin: 0;
+}
+
+@keyframes spectrum {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.title_class span:hover {
+  transform: scale(1.3);
+  transition: transform 0.1s ease;
+  cursor: none;
+}
+
 
 .navigation_class {
   margin-right: 20px;
