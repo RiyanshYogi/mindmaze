@@ -9,11 +9,13 @@ html {
 
 
 body {
-  background-color: lightslategrey;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 
 nav {
-  background-color: rgba(240, 128, 128, 0.8); /* Light coral with transparency */
+  background-color: ; /* Light coral with transparency */
   display: flex;
   /* border-radius: 30px; */
   height: 50px;
@@ -117,22 +119,25 @@ nav > div {
 
 
 .course_class > div {
-  border: 1px solid black;
-  border-radius: 100px;
+  border: 10px solid transparent;
+  /* border-radius: 100px; */
   flex-basis: 200px;
   flex-shrink: 0;
   height: 300px;
-  
+  padding-bottom: 5px;
   margin: 10px;
   box-shadow: 10px 20px 30px;
   text-align: center;
-
+  
   transition: transform 0.3s ease-in-out;
 
 }
 
+
+
 .course_class > div:hover {
-  transform: scale(1.08) rotate(10deg); /* Flip and scale */
+  transform: scale(1.1);
+  border: 10px solid green;
 }
 
 .taketest_class {
@@ -155,7 +160,7 @@ nav > div {
 }
 
 .course_class img {
-  border-radius: 100px 100px 0 0;
+  /* border-radius: 100px 100px 0 0; */
   width: 100%;
   height: 70%;
   object-fit: cover;

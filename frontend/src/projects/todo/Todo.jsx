@@ -55,7 +55,7 @@ export const Todo = () => {
 
         <section className="todo-container">
             <header>
-                <h1><Link to={"/home"} >MindMaze</Link> Tasking</h1>
+                <h1><Link to={"/home"} style={{textDecoration : "none"}} >MindMaze</Link> Tasking</h1>
             </header>
            
             <TodoDate />

@@ -56,62 +56,68 @@ export const Home = () => {
             <section id="Courses" className="course_class">
                 
                 <div>
+                    <h2>Computer</h2>
                     <Link to="/computer">
                         <img src="/images/computer.png" alt="computer image" />
                     </Link>
 
                     <Link to="/computer" className="taketest_class">
-                        Computer Test
+                        Take Test
                     </Link>
                 </div>
 
                 <div>
+                    <h2>Com. Network</h2>
                     <Link to="/cn">
                         <img src="/images/cn.png" alt="CN image" />
                     </Link>
 
                     <Link to="/cn" className="taketest_class">
-                        CN Test
+                        Take Test
                     </Link>
 
                 </div>
 
                 <div>
+                    <h2>Database</h2>
                     <Link to="/database">
                         <img src="/images/database.png" alt="some image" />
                     </Link>
                     <Link to="/database" className="taketest_class">
-                        Database Test
+                        Take Test
                     </Link>
                 </div>
 
                 <div>
+                    <h2>DSA</h2>
                     <Link to="/dsa">
                         <img src="/images/dsa.png" alt="some image" />
                     </Link>
 
                     <Link to="/dsa" className="taketest_class">
-                        DSA Test
+                        Take Test
                     </Link>
                 </div>
 
                 <div>
+                    <h2>OS</h2>
                     <Link to="/os">
                         <img src="/images/os.png" alt="some image" />
                     </Link>
 
                     <Link to="/os" className="taketest_class">
-                        OS Test
+                        Take Test
                     </Link>
                 </div>
 
                 <div>
+                    <h2>Core Java</h2>
                     <Link to="/corejava">
                         <img src="/images/os.png" alt="corejava image" />
                     </Link>
 
                     <Link to="/corejava" className="taketest_class">
-                        Core Java Test
+                        Take Test
                     </Link>
                 </div>
 
