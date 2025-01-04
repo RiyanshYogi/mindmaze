@@ -33,7 +33,7 @@ export const Todo = () => {
     }
 
 
-    // add data to localstorage
+    // add data to localstorage seamlessely
 
 
     const handleClearAll = () => {
